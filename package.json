@@ -1,0 +1,42 @@
+{
+  "name": "astro-onscroll-animations",
+  "version": "1.0.0",
+  "description": "A package that facilitates the implementation of on scroll reveal animations in astro projects.",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev",
+    "prepare": "astro build"
+  },
+  "files": [
+    "src/index.ts",
+    "src/components/OnScrollReveal.astro",
+    "src/components/scroll-animations.css"
+  ],
+  "exports": "./src/components/OnScrollReveal.astro",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merrvve/astro-on-scroll-reveal.git"
+  },
+  "keywords": [
+    "astro",
+    "onscroll-animations",
+    "animation"
+  ],
+  "author": "merve keskin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/merrvve/astro-on-scroll-reveal/issues"
+  },
+  "homepage": "https://github.com/merrvve/astro-on-scroll-reveal#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "astro": "^4.15.8"
+  }
+}

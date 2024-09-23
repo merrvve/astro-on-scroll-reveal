@@ -1,0 +1,15 @@
+.scroll-animation {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+  }
+
+  .scroll-animated {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .delay-300 {
+    transition-delay: 300ms;
+
+  }

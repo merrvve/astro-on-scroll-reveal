@@ -1,0 +1,37 @@
+---
+import './scroll-animations.css';
+---
+<slot></slot>
+
+<script>
+  const initializeObserver = () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("scroll-animated");
+
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      }
+    );
+
+    const elements = document.querySelectorAll(".scroll-animation");
+
+    elements.forEach((element) => {
+      if (!element.classList.contains("scroll-animated")) {
+        observer.observe(element);
+      }
+    });
+  };
+
+  const handlePageEvents = () => {
+    initializeObserver();
+  };
+
+  document.addEventListener("DOMContentLoaded", handlePageEvents);
+</script>
