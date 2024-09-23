@@ -7,7 +7,7 @@ A package that facilitates the implementation of on scroll reveal animations in 
 # Usage:
 ```astro
 ---
-import OnScrollReveal from 'astro-onscroll-animations
+import OnScrollReveal from 'astro-onscroll-animations;
 ---
 
 ...
