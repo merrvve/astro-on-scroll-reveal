@@ -4,7 +4,6 @@ A package that facilitates the implementation of on scroll reveal animations in 
 
 `npm install astro-onscroll-animations`
 
-Here’s an improved version of your usage guide for the `OnScrollReveal` component. I've focused on clarity, grammar, and providing more structured instructions to make it easier for developers to understand and implement.
 
 ---
 
