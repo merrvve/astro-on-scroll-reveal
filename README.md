@@ -97,4 +97,3 @@ import OnScrollReveal from 'astro-onscroll-animations';
 
 - In this example, the first heading (`Hello`) animates immediately when it appears, while the second heading (`World!`) starts its animation 300ms later. (`Text`) and (`Another Text`) animates with the style of swing-in-left animation with corresponding delays.
 
-This structured approach should make it easier to follow the guide and implement the `OnScrollReveal` component effectively.
