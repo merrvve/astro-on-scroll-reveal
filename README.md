@@ -36,6 +36,49 @@ import OnScrollReveal from 'astro-onscroll-animations';
 
 ### Key Points:
 - **`scroll-animation`**: Attach this class to elements that should animate when they enter the viewport.
+- **Animation Classes**: there are two animation classes available: `scroll-animation-default` and `swing-in-left`
+    ***scroll-animation-default***
+  ```css
+    .scroll-animation-default {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+  }
+  
+  .scroll-animated-default {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  ```
+    ***swing-in-left***
+  ```css
+    .swing-in-left {
+      animation: none;
+    }
+    
+    .swing-in-left-anim {
+      animation-name: swingAnim;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      opacity: 1;
+    }
+    
+    @keyframes swingAnim {
+      0% {
+        opacity: 0;
+        transform: rotateY(100deg);
+        transform-origin: left;
+      }
+    
+      100% {
+        opacity: 1;
+        transform: rotateY(0);
+        transform-origin: left;
+      }
+    }
+  ```
 - **Delay Classes**: To create a sequence of animations, you can add delay classes like `delay-300`, `delay-600`, etc. The value represents the delay in milliseconds before the animation starts. Delay classes starts from delay-300 which indicated to delay 300ms to delay-1200, and available in 150ms intervals:
  
   - `delay-300` – 300ms delay
