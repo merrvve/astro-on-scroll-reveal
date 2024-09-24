@@ -1,6 +1,6 @@
 {
   "name": "astro-onscroll-animations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that facilitates the implementation of on scroll reveal animations in astro projects.",
   "main": "dist/index.js",
   "type": "module",

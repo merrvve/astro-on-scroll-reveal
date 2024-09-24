@@ -1,5 +1,6 @@
 ---
 import './scroll-animations.css';
+
 ---
 <slot></slot>
 
@@ -9,7 +10,14 @@ import './scroll-animations.css';
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("scroll-animated");
+            if(entry.target.classList.contains("swing-in-left")) {
+              entry.target.classList.remove("swing-in-left");
+              entry.target.classList.add("swing-in-left-anim");
+            }
+            else {
+              entry.target.classList.add("scroll-animated-default");
+            }
+            
 
             observer.unobserve(entry.target); // Stop observing once animated
           }
@@ -22,8 +30,9 @@ import './scroll-animations.css';
 
     const elements = document.querySelectorAll(".scroll-animation");
 
+
     elements.forEach((element) => {
-      if (!element.classList.contains("scroll-animated")) {
+      if (!element.classList.contains("scroll-animated-default","swing-in-left-anim")) {
         observer.observe(element);
       }
     });

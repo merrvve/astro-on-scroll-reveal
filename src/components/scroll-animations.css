@@ -1,15 +1,75 @@
-.scroll-animation {
-    transform: translateY(50px);
+.scroll-animation  {
+  opacity:0;
+}
+.scroll-animation-default {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.scroll-animated-default {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+.delay-450 {
+  transition-delay: 450ms;
+  animation-delay: 450ms;
+}
+
+.delay-600 {
+  transition-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+.delay-750 {
+  transition-delay: 750ms;
+  animation-delay: 750ms;
+}
+
+.delay-900 {
+  transition-delay: 900ms;
+  animation-delay: 900ms;
+}
+
+.delay-1200 {
+  transition-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+
+.delay-1500 {
+  transition-delay: 1500ms;
+  animation-delay: 1500ms;
+}
+
+.swing-in-left {
+  animation: none;
+}
+
+.swing-in-left-anim {
+  animation-name: swingAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
+@keyframes swingAnim {
+  0% {
     opacity: 0;
-    transition: all 0.5s ease-in;
+    transform: rotateY(100deg);
+    transform-origin: left;
   }
 
-  .scroll-animated {
-    transform: translateY(0);
+  100% {
     opacity: 1;
+    transform: rotateY(0);
+    transform-origin: left;
   }
-
-  .delay-300 {
-    transition-delay: 300ms;
-
-  }
+}

@@ -14,7 +14,7 @@ import { OnScrollReveal } from '..';
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 10rem;
+        padding: 5rem;
         gap: 2rem;
         
       }
@@ -29,8 +29,12 @@ import { OnScrollReveal } from '..';
   <body>
     <OnScrollReveal>
       <div class="hero">
-        <h1 class="scroll-animation">Hello</h1>
-        <h1 class="scroll-animation delay-300">World!</h1>       
+        <h1 class="scroll-animation scroll-animation-default">Hello - scroll-animation scroll-animation-default</h1>
+        <h1 class="scroll-animation scroll-animation-default delay-300">World! - scroll-animation scroll-animation-default delay-300</h1>       
+      </div>
+      <div class="hero">
+        <h2 class="scroll-animation swing-in-left delay-600">Text - scroll-animation swing-in-left delay-600</h2>
+        <h2 class="scroll-animation swing-in-left delay-750 ">Another Text - scroll-animation swing-in-left delay-750</h2>
       </div>
     </OnScrollReveal>
   </body>
