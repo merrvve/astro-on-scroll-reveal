@@ -33,6 +33,7 @@
   "homepage": "https://github.com/merrvve/astro-on-scroll-reveal#readme",
   "devDependencies": {
     "@types/node": "^22.5.5",
+    "prettier": "3.3.3",
     "typescript": "^5.6.2"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
-.scroll-animation  {
-  opacity:0;
+.scroll-animation {
+  opacity: 0;
 }
 .scroll-animation-default {
   transform: translateY(50px);
@@ -37,14 +37,9 @@
   animation-delay: 900ms;
 }
 
-.delay-1200 {
-  transition-delay: 1200ms;
-  animation-delay: 1200ms;
-}
-
-.delay-1500 {
-  transition-delay: 1500ms;
-  animation-delay: 1500ms;
+.delay-1050 {
+  transition-delay: 1050ms;
+  animation-delay: 1050ms;
 }
 
 .swing-in-left {
